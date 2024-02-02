@@ -85,6 +85,6 @@ RUN gst-inspect-1.0; \
     "/usr/local/bin/neolink" --version && \
     mkdir -m 0700 /root/.config/ # Location that the push notifications are cached to
 
-CMD ["/usr/local/bin/neolink", "rtsp", "--config", "/etc/neolink.toml"]
+CMD ["/usr/local/bin/neolink", "mqtt", "--config", "/etc/neolink.toml"]
 ENTRYPOINT ["/entrypoint.sh"]
 EXPOSE 8554
